@@ -1,0 +1,91 @@
+/* 基本設定 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
+}
+
+/* 左邊區塊背景 */
+.left_container{
+    position: fixed;
+    width: 52%;
+    height: 100%;
+    background-color: #5CB6E7;
+    background-image: url(../img/foreign_parts_left.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 右邊訊息內容 */
+.right_container{
+    position: absolute;
+    right: 0;
+    width: 48%;
+    height: 100%;
+    background-color: #fff;
+    
+    
+}
+
+.allcontent{
+    padding: 50px 70px 15px 70px;
+    background: url(../img/bg_dot.jpg);
+    background-repeat: repeat;
+    text-align: center;
+}
+h2{
+    display: block;
+    font-size: 1.2em;
+}
+p{
+    margin: 10px 0;
+    line-height: 1.2em;
+    font-size: 0.85em;
+   
+}
+
+.date{
+    margin: 50px 0 70px 0;
+}
+
+.img_title{
+    margin: 25px 0;
+}
+
+.content{
+    text-align: left;
+}
+.memo{
+    font-size: 0.7em;
+
+}
+.ticket:hover{
+    opacity: .7;
+}
+.traffic{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 0.85em;
+    
+}
+.traffic tr th{
+    background-color: #fff;
+    background-color: #5CB6E7
+}
+.traffic tr th,
+.traffic tr td{
+    border:1px #bbb solid;
+    border-spacing: 2px;
+    padding: 15px;
+}
+
+.copyright{
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    padding: 20px 70px 20px 70px;
+    background: #fff;
+}
