@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <p id="tree"></p>
     <script>
         // 分解動作
         // 1. 觀察列和星星數量的變化: 星星數量 = 最終列 + 最終列 - 1
@@ -22,7 +22,21 @@
         //    第三列：1=>1、7=>7
         //    第四列：
         // 3. 觀察星星中間位置: 中間位置 = 最終列
+        var n = 5;
+        for (i = 1; i <= n; i++) {
+            //空格
+            for (j = 1; j <= n - i; j++) {
+                document.write("&nbsp;");
+            }
+            //星星
+            for (k = 1; k <= 2 * i - 1; k++) {
+                document.write("*")
+            }
+            document.write("<br/>")
+        }
+
     </script>
+
 </body>
 
 </html>
