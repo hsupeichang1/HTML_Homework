@@ -8,31 +8,57 @@
 </head>
 
 <body>
+    作業計算機交付
+    https://medium.com/@zxcv4695152526/%E6%96%B0%E6%89%8B-js-%E5%9C%B0%E4%B8%8B%E5%9F%8E-%E8%A8%88%E7%AE%97%E6%A9%9F-c458660b49e5
 
-   <!-- <p><a href="https://www.desmos.com/scientific" target="_blank">參考網路上面的計算機</a></p> -->
-    
-   <div class="container">
-       <div class="display"></div>
-       <span>7</span>
-       <span>8</span>
-       <span>9</span>
-       <span class="cacu">/</span>
-       <span>back</span>
-       <span>4</span>
-       <span>5</span>
-       <span>6</span>
-       <span class="cacu">X</span>
-       <span class="cacu">%</span>
-       <span>1</span>
-       <span>2</span>
-       <span>3</span>
-       <span class="cacu">-</span>
-       <span>?</span>
-       <span class="zero">0</span>
-       <span>.</span>
-       <span class="cacu">+</span>
-       <span class="cacu">=</span>
-   </div>
+    <!-- <p><a href="https://www.desmos.com/scientific" target="_blank">參考網路上面的計算機</a></p> -->
+
+    <div class="container">
+        <div class="display">
+            <p id="result"></p>
+        </div>
+        <span onclick="fun(7)">7</span>
+        <span onclick="fun(8)">8</span>
+        <span onclick="fun(9)">9</span>
+        <span class="cacu">x</span>
+        <span onclick="delfun()">back</span>
+        <span onclick="fun(4)">4</span>
+        <span onclick="fun(5)">5</span>
+        <span onclick="fun(6)">6</span>
+        <span class="cacu">-</span>
+        <span class="cacu">%</span>
+        <span onclick="fun(1)">1</span>
+        <span onclick="fun(2)">2</span>
+        <span onclick="fun(3)">3</span>
+        <span class="cacu" onclick="plus()">+</span>
+        <span>/</span>
+        <span class="zero" onclick="fun(0)">0</span>
+        <span>.</span>
+        <span class="cacu equ">=</span>
+    </div>
+
+
+    <script>
+        var num = 0;
+        var result =  document.getElementById("result");
+        
+        //按鈕顯示數字
+        function fun(str) {
+            result.innerHTML = result.innerHTML + str;
+        }
+
+        function plus() {
+            result = result.value + n;
+        }
+        console.log(plus(n));
+
+        //刪除數字
+        function delfun(){
+          var arr =  result ;
+          arr.value = arr.value.substring(0, arr.value.length - 1);
+          console.log(arr.value);
+        }
+    </script>
 </body>
 
 </html>
