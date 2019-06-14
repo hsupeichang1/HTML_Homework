@@ -22,15 +22,20 @@
         //    第三列：1=>1、7=>7
         //    第四列：
         // 3. 觀察星星中間位置: 中間位置 = 最終列
+
         var n = 5;
         for (i = 1; i <= n; i++) {
-            //空格
+            //左空格  -> 總階層減掉目前的階層數 第一列5-1=4
             for (j = 1; j <= n - i; j++) {
-                document.write("&nbsp;");
+                document.write("　");
             }
-            //星星
-            for (k = 1; k <= 2 * i - 1; k++) {
-                document.write("*")
+            //星星 -> ( 列*2 )-1
+            for (k = 1; k <= i * 2 - 1; k++) {
+                document.write("＊")
+            }
+            //右空格
+            for (j = 1; j <= n - i; j++) {
+                document.write("　");
             }
             document.write("<br/>")
         }
